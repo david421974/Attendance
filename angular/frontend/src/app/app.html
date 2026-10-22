@@ -1,0 +1,49 @@
+<main class="page">
+  <section class="card">
+    <h1>{{ title }}</h1>
+    <p class="subtitle">Versión simple basada en tu flujo actual: login + contraseña hardcodeadas.</p>
+
+    <form class="login-form" (ngSubmit)="login()">
+      <label>
+        Usuario
+        <input type="text" [(ngModel)]="username" name="username" required />
+      </label>
+
+      <label>
+        Contraseña
+        <input type="password" [(ngModel)]="userpassword" name="userpassword" required />
+      </label>
+
+      <button type="submit" [disabled]="loading">
+        {{ loading ? 'Validando…' : 'Entrar' }}
+      </button>
+    </form>
+
+    @if (loginMessage) {
+      <p class="message" [class.error]="!loginOk">{{ loginMessage }}</p>
+    }
+  </section>
+
+  @if (resumen) {
+    <section class="card">
+      <h2>{{ resumen.titulo }}</h2>
+      <div class="kpis">
+        <article>
+          <p class="label">Personas registradas</p>
+          <p class="value">{{ resumen.total_personas }}</p>
+        </article>
+        <article>
+          <p class="label">attendances hoy</p>
+          <p class="value">{{ resumen.attendances_hoy }}</p>
+        </article>
+        <article>
+          <p class="label">Actividad activa</p>
+          <p class="value">{{ resumen.actividad_activa }}</p>
+        </article>
+      </div>
+      <p class="updated">
+        Actualizado: {{ resumen.actualizado_en | date: 'dd/MM/yyyy HH:mm:ss' }}
+      </p>
+    </section>
+  }
+</main>
