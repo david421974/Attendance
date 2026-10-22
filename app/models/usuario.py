@@ -1,3 +1,4 @@
+#app/models/usuario.py
 from pydantic import EmailStr
 from sqlmodel import Field, SQLModel
 

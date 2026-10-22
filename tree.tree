@@ -1,0 +1,16 @@
+Attendance/
+├── angular/frontend/
+├── app/
+│   ├── models/
+│   ├── services/
+│   └── database.py
+├── database/
+│   └── attendance.db
+├── docs/
+├── scripts/
+├── src/
+│   └── attendance/
+├── main.py
+├── pyproject.toml
+├── README.md
+└── uv.lock

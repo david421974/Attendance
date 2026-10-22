@@ -1,7 +1,9 @@
+#main.py
+
 from sqlmodel import SQLModel
 
 from app.database import engine
-from app.models import *
+from app.models.usuario import Usuario
 
 
 def crear_base_datos()-> None:
@@ -11,4 +13,4 @@ def crear_base_datos()-> None:
 
 
 if __name__=="__main__":
-    crear_base_datos()  
+    crear_base_datos() 
