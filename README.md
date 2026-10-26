@@ -365,3 +365,58 @@ attendance
 └─ uv.lock
 
 ```
+```
+Attendance
+├─ .editorconfig
+├─ .python-version
+├─ angular
+│  └─ frontend
+│     ├─ .angular
+│     ├─ .editorconfig
+│     ├─ .prettierrc
+│     ├─ angular.json
+│     ├─ package-lock.json
+│     ├─ package.json
+│     ├─ proxy.conf.json
+│     ├─ public
+│     │  └─ favicon.ico
+│     ├─ README.md
+│     ├─ src
+│     │  ├─ app
+│     │  │  ├─ app.config.ts
+│     │  │  ├─ app.html
+│     │  │  ├─ app.routes.ts
+│     │  │  ├─ app.scss
+│     │  │  ├─ app.spec.ts
+│     │  │  └─ app.ts
+│     │  ├─ index.html
+│     │  ├─ main.ts
+│     │  └─ styles.scss
+│     ├─ tsconfig.app.json
+│     ├─ tsconfig.json
+│     └─ tsconfig.spec.json
+├─ app
+│  ├─ database.py
+│  ├─ models
+│  │  ├─ usuario.py
+│  │  └─ __init__.py
+│  └─ services
+│     ├─ usuario_service.py
+│     └─ __init__.py
+├─ database
+├─ docs
+│  └─ MVP_SIMPLE.md
+├─ main.py
+├─ pyproject.toml
+├─ README.md
+├─ scripts
+│  └─ start-dev.ps1
+├─ src
+│  ├─ attendance
+│  │  └─ __init__.py
+│  └─ __init__.py
+├─ tree.tree
+├─ tree1.tree
+└─ uv.lock
+
+```

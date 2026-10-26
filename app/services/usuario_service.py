@@ -5,7 +5,7 @@ from app.database import engine
 from app.models.usuario import Usuario
 
 
-def crear_usuario(
+def crear_usuario(  #Creat
     nombre_completo:str,
     email:EmailStr
     ) -> Usuario:
@@ -25,7 +25,7 @@ def crear_usuario(
 
 
 
-def obtener_usuario_por_email(
+def obtener_usuario_por_email(# Read
     email: EmailStr
 ) -> Usuario | None:
 
@@ -44,7 +44,7 @@ def obtener_usuario_por_email(
 
 
 
-def listar_usuarios() ->list[Usuario]:
+def listar_usuarios() ->list[Usuario]: # Read
     
     with Session(engine) as session:
 
@@ -56,7 +56,7 @@ def listar_usuarios() ->list[Usuario]:
         return usuarios
 
 
-def obtener_usuario_por_id(
+def obtener_usuario_por_id( #Read
     id_usuario:int
     )-> Usuario | None:
 
